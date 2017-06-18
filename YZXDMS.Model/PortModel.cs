@@ -72,8 +72,13 @@ namespace YZXDMS.Model
     /// </summary>
     public class ProtocolModel
     {
+        /// <summary>
+        /// 协议名称
+        /// </summary>
         public string Name { get; set; }
-
+        /// <summary>
+        /// 协议ID
+        /// </summary>
         public int ID { get; set; }
     }
 }
