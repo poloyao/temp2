@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{515BA049-74CA-463A-BCC3-F3F84CF99E81}</ProjectGuid>
+    <ProjectGuid>{581F1DC4-D795-409E-86BD-3A033E9F9AE1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>YZXDMS.Model</RootNamespace>
-    <AssemblyName>YZXDMS.Model</AssemblyName>
+    <RootNamespace>YZXDMS.DetectProvider</RootNamespace>
+    <AssemblyName>YZXDMS.DetectProvider</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,7 +31,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,24 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DetectionType.cs" />
-    <Compile Include="AssistDeviceType.cs" />
-    <Compile Include="DetectStatusEnum.cs" />
-    <Compile Include="DeviceModel.cs" />
-    <Compile Include="LightDetectionMode.cs" />
-    <Compile Include="PortModel.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="DetecProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StartMode.cs" />
-    <Compile Include="StationModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LightDetect\LightDetect.csproj">
+      <Project>{d54c864c-5203-41ed-a23d-d5479392f095}</Project>
+      <Name>LightDetect</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YZXDMS.Detect\YZXDMS.Detect.csproj">
+      <Project>{07f04bd7-3201-421e-91bd-6cdab3db92b4}</Project>
+      <Name>YZXDMS.Detect</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>

@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IAssistDevice.cs" />
     <Compile Include="IDetect.cs" />
     <Compile Include="ILightDetect.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

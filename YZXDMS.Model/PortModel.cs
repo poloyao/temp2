@@ -64,6 +64,15 @@ namespace YZXDMS.Model
         /// 协议
         /// </summary>
         public ProtocolModel Protocol { get; set; }
+        /// <summary>
+        /// 启动模式
+        /// </summary>
+        public StartMode StartMode { get; set; }
+        /// <summary>
+        /// 编号。用于区分同一工位或流程中出现的同款设备
+        /// </summary>
+        public int Index { get; set; }       
+
         
     }
 

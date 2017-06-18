@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YZXDMS", "YZXDMS\YZXDMS.csproj", "{B3112085-764E-4118-A545-14CA33762884}"
 EndProject
@@ -10,6 +10,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YZXDMS.Test", "YZXDMS.Test\YZXDMS.Test.csproj", "{11EA24FE-856C-41BD-902F-0E4490DB1044}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YZXDMS.Model", "YZXDMS.Model\YZXDMS.Model.csproj", "{515BA049-74CA-463A-BCC3-F3F84CF99E81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YZXDMS.Common", "YZXDMS.Common\YZXDMS.Common.csproj", "{43FED19D-5F58-4559-B0FF-4D4C863E169E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightDetect", "LightDetect\LightDetect.csproj", "{D54C864C-5203-41ED-A23D-D5479392F095}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YZXDMS.DataProvider", "YZXDMS.DataProvider\YZXDMS.DataProvider.csproj", "{6F7C8C3E-12BA-4954-9B82-0DE5F59A8B8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YZXDMS.DLLProvider", "YZXDMS.DLLProvider\YZXDMS.DLLProvider.csproj", "{DD747387-400C-4F61-9AE8-13693E75E592}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,22 @@ Global
 		{515BA049-74CA-463A-BCC3-F3F84CF99E81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{515BA049-74CA-463A-BCC3-F3F84CF99E81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{515BA049-74CA-463A-BCC3-F3F84CF99E81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43FED19D-5F58-4559-B0FF-4D4C863E169E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43FED19D-5F58-4559-B0FF-4D4C863E169E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43FED19D-5F58-4559-B0FF-4D4C863E169E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43FED19D-5F58-4559-B0FF-4D4C863E169E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D54C864C-5203-41ED-A23D-D5479392F095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D54C864C-5203-41ED-A23D-D5479392F095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D54C864C-5203-41ED-A23D-D5479392F095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D54C864C-5203-41ED-A23D-D5479392F095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F7C8C3E-12BA-4954-9B82-0DE5F59A8B8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F7C8C3E-12BA-4954-9B82-0DE5F59A8B8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F7C8C3E-12BA-4954-9B82-0DE5F59A8B8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F7C8C3E-12BA-4954-9B82-0DE5F59A8B8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD747387-400C-4F61-9AE8-13693E75E592}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD747387-400C-4F61-9AE8-13693E75E592}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD747387-400C-4F61-9AE8-13693E75E592}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD747387-400C-4F61-9AE8-13693E75E592}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
