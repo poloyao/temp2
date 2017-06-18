@@ -48,12 +48,21 @@ namespace YZXDMS.Model
     /// </summary>
     public class PortConfigModel
     {
+        /// <summary>
+        /// 名称
+        /// </summary>
         public string Name { get; set; }
-
+        /// <summary>
+        /// 串口
+        /// </summary>
         public SerialPort Port { get; set; }
-
-        public DeviceNaure DeviceType { get; set; }
-
+        /// <summary>
+        /// 设备性质
+        /// </summary>
+        public DeviceProperty DeviceProperty { get; set; }
+        /// <summary>
+        /// 协议
+        /// </summary>
         public ProtocolModel Protocol { get; set; }
         
     }

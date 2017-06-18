@@ -9,7 +9,7 @@ namespace YZXDMS.Model
     /// <summary>
     /// 设备性质
     /// </summary>
-    public enum DeviceNaure
+    public enum DeviceProperty
     {
         /// <summary>
         /// 辅助设备

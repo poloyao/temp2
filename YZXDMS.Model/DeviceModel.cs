@@ -10,6 +10,6 @@ namespace YZXDMS.Model
     {
         public string Name { get; set; }
 
-        public DeviceNaure Naure { get; set; }
+        public DeviceProperty Naure { get; set; }
     }
 }

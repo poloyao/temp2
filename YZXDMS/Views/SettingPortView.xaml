@@ -1,0 +1,55 @@
+﻿<UserControl xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm" xmlns:ViewModels="clr-namespace:YZXDMS.ViewModels"
+             xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol" x:Class="YZXDMS.Views.SettingPortView"
+             mc:Ignorable="d"
+             DataContext="{dxmvvm:ViewModelSource Type={x:Type ViewModels:SettingPortViewModel}}"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <!--<dxlc:DataLayoutControl HorizontalAlignment="Left" Height="100" Margin="89,89,0,0" VerticalAlignment="Top" Width="100"/>-->
+        <Grid>
+            <dxlc:LayoutControl Orientation="Vertical" DataContext="{Binding Items[0]}">
+            <dxlc:LayoutGroup>
+                    <dxlc:LayoutItem Label="设备性质">
+                        <dxe:TextEdit EditValue="{Binding DeviceProperty}"/>
+                    </dxlc:LayoutItem>
+                    <dxlc:LayoutItem Label="协议">
+                        <dxe:TextEdit EditValue="{Binding Protocol}"/>
+                    </dxlc:LayoutItem>
+                </dxlc:LayoutGroup>
+                <dxlc:LayoutGroup>
+                    <dxlc:LayoutItem Label="端口">
+                        <dxe:TextEdit EditValue="{Binding Port.PortName}"/>
+                    </dxlc:LayoutItem>
+                    <dxlc:LayoutItem Label="波特率">
+                        <dxe:TextEdit EditValue="{Binding Port.BaudRate}"/>
+                    </dxlc:LayoutItem>
+                    <dxlc:LayoutItem Label="数据位">
+                        <dxe:TextEdit EditValue="{Binding Port.DataBits}"/>
+                    </dxlc:LayoutItem>
+                    <dxlc:LayoutItem Label="奇偶校验">
+                        <dxe:TextEdit EditValue="{Binding Port.Parity}"/>
+                    </dxlc:LayoutItem>
+                    <dxlc:LayoutItem Label="停止位">
+                        <dxe:TextEdit EditValue="{Binding Port.StopBits}"/>
+                    </dxlc:LayoutItem>
+                </dxlc:LayoutGroup>
+            </dxlc:LayoutControl>
+            
+            <!--<dxlc:DataLayoutControl />-->
+        </Grid>
+
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button>取消</Button>
+            <Button>保存</Button>
+        </StackPanel>
+    </Grid>
+</UserControl>
